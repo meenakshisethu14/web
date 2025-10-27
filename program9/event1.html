@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Change image</title>
+</head>
+<body>
+  <h2>Click the image to Change image </h2>
+  <img id="i"src="water.jpeg"onmouseover="changei()"onmouseout="setold()" width="220px" height="230px" ">
+<script>
+    function changei() 
+    {
+     document.getElementById("i").src="moun.jpeg";
+     
+     }
+    function setold() 
+    {
+     document.getElementById("i").src="water.jpeg";
+     }
+    
+  </script>
+  
+</body>
+</html>
+

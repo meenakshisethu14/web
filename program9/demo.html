@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change image position</title>
+</head>
+<body>
+  <h2>Click the image to change it and move it</h2>
+
+  <img id="i" src="water.jpeg" width="220" height="230" style="float:left;" onclick="changei()">
+
+  <script>
+    function changei() {
+      var img = document.getElementById("i");
+      if (img.src.includes("water.jpeg")) {
+        img.src = "moun.jpeg";
+        img.style.float = "right";
+      } else {
+        img.src = "water.jpeg";
+        img.style.float = "left";
+      }
+    }
+  </script>
+</body>
+</html>
+
