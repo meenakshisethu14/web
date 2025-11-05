@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>quiz</title>
+<style>
+body{
+background-color:pink;
+}
+h1{text-align:center;
+color:green;
+}
+h3{
+color:purple;
+}
+
+</style>
+</head>
+<body>
+<script>
+function marks()
+{
+let score=0;
+if (document.getElementById("a").checked)
+	{
+	score++;
+	}
+if (document.getElementById("b").checked)
+	{
+	score++;
+	}
+if (document.getElementById("c").checked)
+	{
+	score++;
+	}
+document.getElementById("s").innerHTML="SCORE :"+score;
+}
+</script>
+<h1>ONLINE QUIZ</h1>
+<h3>What is HTML?</h3>
+<input type="radio"name="c">HYPER TEXT MARKUP</input><BR>
+<input type="radio"name="c"id="a">HYPER TEXT MARKUP LANGUAGE</input><br>
+<input type="radio"name="c">HYPER  MARKUP LANGUAGE</input><br>
+<input type="radio"name="c">HYPER TEXT </input><br>
+<h3>What is CSS?</h3>
+<input type="radio"name="a"id="b">CASCADING STYLE SHEET</input><BR>
+<input type="radio"name="a">CASUAL STYLE SHEET</input><br>
+<input type="radio"name="a">STYLE SHEET</input><br>
+<input type="radio"name="a">CASCADING STYLES</input><br>
+<h3>What is JS?</h3>
+<input type="radio"name="b">JAVA</input><BR>
+<input type="radio"name="b">JAVA TEXT</input><br>
+<input type="radio"name="b">JAVA SHEET</input><br>
+<input type="radio"name="b"id="c">JAVA SCRIPT </input><br>
+<H3 id="s">SCORE:</H3>
+<input type="SUBMIT"onclick="marks()">
+</body>
+
+</html>
